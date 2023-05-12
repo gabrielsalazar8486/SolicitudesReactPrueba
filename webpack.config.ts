@@ -25,6 +25,18 @@ const webpackConfig = (env): Configuration => ({
                     transpileOnly: true
                 },
                 exclude: /dist/
+            },
+            {
+                test: /\.(png|jpe?g)$/i,
+                use: [
+                    {
+                        loader: "file-loader"
+                    }
+                ]
+            },
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"]
             }
         ]
     },
