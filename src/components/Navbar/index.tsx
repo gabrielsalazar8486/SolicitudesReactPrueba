@@ -8,7 +8,7 @@ import {Col, Row} from "react-bootstrap";
 const Navbar: React.FC = () => {
     return (
         <>
-            <Row style={{marginBottom: "0px"}}>
+            <Row>
                 <Col md={"3"}>
                     <Logo />
                 </Col>
@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
                     </Row>
                 </Col>
             </Row>
-            <hr style={{marginTop: "-18px"}} />
+            <hr style={{marginTop: "-10px"}} />
         </>
     );
 };
