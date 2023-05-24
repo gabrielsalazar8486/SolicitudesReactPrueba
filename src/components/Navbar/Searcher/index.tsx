@@ -5,8 +5,12 @@ const Searcher: React.FC = () => (
     <>
         <Form>
             <InputGroup style={{marginTop: "20px"}}>
-                <InputGroup.Text style={{backgroundColor: "#f67d15", color: "#fff"}}>
-                    <Button type={"button"} style={{backgroundColor: "#f67d15", border: "0"}}>
+                <InputGroup.Text style={{backgroundColor: "#FF7900", color: "#fff"}}>
+                    <Button
+                        type={"button"}
+                        style={{backgroundColor: "#FF7900", border: "0"}}
+                        id="Searcher"
+                    >
                         <i className="fas fa-search"></i>
                     </Button>
                 </InputGroup.Text>
