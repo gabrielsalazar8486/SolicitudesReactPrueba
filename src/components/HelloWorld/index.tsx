@@ -5,7 +5,7 @@ import Zone1 from "components/Zone1";
 import Zone2 from "components/Zone2";
 
 const HelloWorld: React.FC = () => (
-    <div style={{fontFamily: "Open Sans", fontSize: "14px"}}>
+    <div style={{fontFamily: "Open Sans", fontSize: "14px", padding: "1rem"}}>
         <Navbar />
         <Banner />
         <Zone1 />

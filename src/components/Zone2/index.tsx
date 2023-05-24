@@ -1,11 +1,23 @@
 import React from "react";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import Zone2ImgImg from "./img_3.png";
-const Zone2Img: React.FC = () => (
+import {Col, Row} from "react-bootstrap";
+import RecurringOptions from "components/Zone2/RecurringOptions";
+import BannerTxt from "components/BannerTxt";
+import RecurringQuestions from "components/Zone2/RecurringQuestions";
+
+const Zone2: React.FC = () => (
     <>
-        <img src={Zone2ImgImg} alt={"Zone2Img"} style={{width: `100%`}} />
+        <Row style={{marginTop: "3rem", borderTop: "1px solid", borderColor: "#FF7900"}}>
+            <Col md={"6"}>
+                <RecurringOptions />
+            </Col>
+            <Col md={"3"}>
+                <BannerTxt />
+            </Col>
+            <Col md={"3"}>
+                <RecurringQuestions />
+            </Col>
+        </Row>
     </>
 );
 
-export default Zone2Img;
+export default Zone2;

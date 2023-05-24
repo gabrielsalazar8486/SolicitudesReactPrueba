@@ -57,6 +57,18 @@ export const styleCard: CSSProperties = {
     color: "#444C5E"
 };
 
+export const recurringOption: CSSProperties = {
+    backgroundColor: "transparent",
+    width: "10rem",
+    height: "10rem",
+    justifyContent: "center",
+    alignItems: "center",
+    borderColor: "#004C97",
+    color: "#444C5E",
+    borderRadius: "10rem",
+    marginTop: "1rem"
+};
+
 export const hoverStyleCard: CSSProperties = {
     backgroundColor: "transparent",
     width: "15rem",
