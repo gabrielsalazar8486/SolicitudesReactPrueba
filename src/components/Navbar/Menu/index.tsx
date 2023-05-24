@@ -1,17 +1,15 @@
 import React from "react";
 import {Nav, Navbar} from "react-bootstrap";
-import {optionsMenu} from "components/Navbar/Menu/optionsMenu";
+import OptionMenu, {optionsMenu} from "components/Navbar/Menu/optionsMenu";
 
-const Menu: React.FC = () => {
+const Menu = () => {
     return (
-        <Navbar bg="light" expand="lg" style={{padding: "10px"}}>
+        <Navbar expand="lg" style={{marginLeft: "5rem", marginTop: "1rem"}}>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto" justify fill>
-                    {optionsMenu.map(({html, style, href}, index) => (
-                        <Nav.Link key={index} style={style} href={href}>
-                            {html}
-                        </Nav.Link>
+                    {optionsMenu.map(({html, href}, index) => (
+                        <OptionMenu key={index} html={html} href={href} />
                     ))}
                 </Nav>
             </Navbar.Collapse>

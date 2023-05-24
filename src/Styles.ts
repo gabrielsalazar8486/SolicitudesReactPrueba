@@ -1,63 +1,70 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import logo_star from "../public/Imgs/star_bg.png";
 
-export const horizontalElements: {display: string; justifyContent: string} = {
+import logo_star from "../public/Imgs/star_bg.png";
+import {CSSProperties} from "react";
+
+export const horizontalElements: CSSProperties = {
     display: "flex",
     justifyContent: "space-between"
 };
 
-export const MenuBtnLing: {
-    borderRadius: string;
-    marginRight: string;
-    backgroundColor: string;
-    color: string;
-} = {
-    borderRadius: "5px 5px 0px 0px",
-    marginRight: "10px",
-    backgroundColor: "#1677d7",
-    color: "#fff"
+export const MenuBtn: CSSProperties = {
+    marginLeft: "2rem",
+    color: "#444C5E",
+    textAlign: "center",
+    justifyContent: "center",
+    width: "10rem",
+    fontSize: "14px"
 };
 
-export const MenuBtnDark: {
-    borderRadius: string;
-    marginRight: string;
-    backgroundColor: string;
-    color: string;
-} = {
-    borderRadius: "5px 5px 0px 0px",
-    marginRight: "10px",
-    backgroundColor: "#004c97",
-    color: "#fff"
+export const HoverMenuBtn: CSSProperties = {
+    marginLeft: "2rem",
+    width: "10rem",
+    color: "#1677D8",
+    textAlign: "center",
+    justifyContent: "center",
+    borderBottom: "1px solid",
+    borderColor: "#FF7900"
 };
 
-export const icons: object = {
+export const icons: CSSProperties = {
     position: "absolute",
     top: "0",
     left: "0",
     fontSize: "2.5rem",
     color: "#000",
     backgroundColor: "rgba(0, 0, 0, 0.5)",
-    padding: "0.5rem",
-    borderRadius: "1rem"
+    padding: "0.5rem"
 };
-export const iconsHome: object = {
+export const iconsHome: CSSProperties = {
     width: "100%",
     height: "100%",
     textAlign: "center",
     justifyContent: "center",
     color: "rgba(0, 0, 0, 0.2)",
-    fontSize: "18rem",
-    backgroundColor: "rgba(0, 0, 0, 0.2)"
+    fontSize: "10rem",
+    backgroundColor: "transparent"
 };
 
-export const styleCard: object = {
-    backgroundColor: "#1677D8",
-    width: "350px",
-    height: "300px",
-    display: "flex",
+export const styleCard: CSSProperties = {
+    backgroundColor: "transparent",
+    width: "15rem",
+    height: "10rem",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    borderColor: "#004C97",
+    color: "#444C5E"
+};
+
+export const hoverStyleCard: CSSProperties = {
+    backgroundColor: "transparent",
+    width: "15rem",
+    height: "10rem",
+    justifyContent: "center",
+    alignItems: "center",
+    borderColor: "#FF7900",
+    color: "#444C5E"
 };
 
 export const attrLogo: object = {

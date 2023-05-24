@@ -1,6 +1,7 @@
 import React from "react";
-import {Image, Col, Row, Card} from "react-bootstrap";
-import {attrLogo, icons, iconsHome, styleCard} from "../../../Styles";
+import {Col, Row, Card} from "react-bootstrap";
+import {styleCard} from "../../../Styles";
+import BgStar from "components/BgStart";
 
 interface favoritesList {
     id: string;
@@ -8,9 +9,10 @@ interface favoritesList {
 }
 
 const favoritesList: favoritesList[] = [
-    {id: "1", name: "Solicitudes de Productos y Servicios"},
-    {id: "2", name: "Contratos y Proveedores"},
-    {id: "3", name: "Pagos y Provisiones"}
+    {id: "1", name: "Solicitudes de Compra"},
+    {id: "2", name: "Creación de Proveedor"},
+    {id: "3", name: "Provisión Contable"},
+    {id: "4", name: "Configuraciones"}
 ];
 
 const UsersFavorites: React.FC = () => {
@@ -18,28 +20,18 @@ const UsersFavorites: React.FC = () => {
         <>
             <Row>
                 {favoritesList.map((favorite) => (
-                    <Col key={favorite.id} md={"4"} sm={"4"} xs={"4"}>
+                    <Col key={favorite.id} md={"3"} sm={"3"} xs={"3"}>
                         <Card style={styleCard}>
                             <Card.Body
                                 style={{
                                     alignItems: "center",
-                                    fontSize: "2rem",
-                                    textAlign: "center",
-                                    zIndex: 2
+                                    fontSize: "1.5rem",
+                                    textAlign: "center"
                                 }}
                             >
-                                <p style={{marginTop: "30%", color: "#fff"}}>{favorite.name}</p>
+                                <BgStar />
+                                <p style={{marginTop: "1.2rem"}}>{favorite.name}</p>
                             </Card.Body>
-                            <Image {...attrLogo} />
-                            <Image {...attrLogo} />
-                            <i
-                                className="fas fa-home"
-                                style={{
-                                    ...icons,
-                                    ...iconsHome,
-                                    zIndex: 1
-                                }}
-                            />
                         </Card>
                     </Col>
                 ))}

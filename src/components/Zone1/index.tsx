@@ -8,11 +8,11 @@ const Zone1Img: React.FC = () => (
     <>
         <Row style={{marginTop: "40px", padding: "10px"}}>
             <Col md={"4"} sm={"4"} xs={"4"}>
-                <div style={{marginTop: "4rem"}}>
+                <div style={{marginTop: "1rem"}}>
                     <label htmlFor={"Searcher"} style={{color: "#6F7583", fontSize: "24px"}}>
                         Búsqueda
                     </label>
-                    <Searcher />
+                    <Searcher size={"lg"} />
                 </div>
             </Col>
             <Col md={"8"} sm={"8"} xs={"8"}>
