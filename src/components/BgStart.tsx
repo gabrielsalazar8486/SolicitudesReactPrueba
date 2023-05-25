@@ -10,9 +10,15 @@ const listeVectors = [
 ];
 
 const BgStar: React.FC = () => (
-    <svg width="32" height="30" fill="#004C97" style={{...icons, ...iconsHome}}>
+    <svg width="32" height="30" fill="#004C97" style={{...icons, ...iconsHome, opacity: "0.1"}}>
         {listeVectors.map((vectors: string, index) => (
-            <path key={index} fillRule="evenodd" clipRule="evenodd" d={vectors} />
+            <path
+                key={index}
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d={vectors}
+                transform={"scale(4.5)"}
+            />
         ))}
     </svg>
 );

@@ -36,6 +36,24 @@ const UsersFavorites: React.FC = () => {
                     </Col>
                 ))}
             </Row>
+            <Row style={{marginTop: "4rem"}}>
+                {favoritesList.map((favorite) => (
+                    <Col key={favorite.id} md={"3"} sm={"3"} xs={"3"}>
+                        <Card style={styleCard}>
+                            <Card.Body
+                                style={{
+                                    alignItems: "center",
+                                    fontSize: "1.5rem",
+                                    textAlign: "center"
+                                }}
+                            >
+                                <BgStar />
+                                <p style={{marginTop: "1.2rem"}}>{favorite.name}</p>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                ))}
+            </Row>
         </>
     );
 };

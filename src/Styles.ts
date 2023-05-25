@@ -35,7 +35,8 @@ export const icons: CSSProperties = {
     fontSize: "2.5rem",
     color: "#000",
     backgroundColor: "rgba(0, 0, 0, 0.5)",
-    padding: "0.5rem"
+    padding: "0.5rem",
+    marginLeft: "2.5rem"
 };
 export const iconsHome: CSSProperties = {
     width: "100%",
@@ -54,7 +55,7 @@ export const styleCard: CSSProperties = {
     justifyContent: "center",
     alignItems: "center",
     borderColor: "#004C97",
-    color: "#444C5E"
+    color: "#004C97"
 };
 
 export const recurringOption: CSSProperties = {
